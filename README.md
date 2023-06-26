@@ -11,7 +11,7 @@ Esse script é a continuação do [arch-install](https://github.com/frannks/arch
 
 ### Download/Execução:
 
-Logo após de ter executado com êxito o script anterior, entre dentro do chroot e execute esse, com esses comandos:
+Logo após de ter executado com êxito o [script anterior](https://github.com/frannks/arch-install), entre dentro do chroot e execute esse, com esses comandos:
 
 ``` sh
 arch-chroot /mnt
