@@ -118,8 +118,8 @@ password_user(){
 
 # Editar o arquivo do sudo
 edit_sudoers(){
-  sed -i '89s/^#//' /etc/sudoers
-  sed -i '89s/^[ \t]*//' /etc/sudoers
+  sed -i '108s/^# //' /etc/sudoers
+  #sed -i '89s/^[ \t]*//' /etc/sudoers
   #sed -i -r 's/^#(.*%wheel ALL=(ALL:ALL) ALL.*)$/\1/' /etc/sudoers
 }
 
