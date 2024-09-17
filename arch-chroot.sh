@@ -13,7 +13,7 @@ dhcpcd_enable(){
 timezone_config(){
   ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
   hwclock --systohc
-  timedatectl set-ntp true
+  #timedatectl set-ntp true
 }
 
 # Definir linguagem do sistema
