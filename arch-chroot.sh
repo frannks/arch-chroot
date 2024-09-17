@@ -48,16 +48,16 @@ kernels_download(){
   clear && printf "Escolha seu kernel de preferência:\n\n[1] - linux (Kernel defautl)\n[2] - linux-hardened (Kernel focado na segurança)\n[3] - linux-lts (Kernel a longo prazo)\n[4] - linux-zen (Kernel focado em desempenho)\n\n"
   read KERNEL_CHOICE
   if [ $KERNEL_CHOICE == '1' ] || [ $KERNEL_CHOICE == '01' ] ; then
-    clear && pacman -S linux linux-headers --noconfirm
+    clear && pacman -S linux --noconfirm
 
   elif [ $KERNEL_CHOICE == '2' ] || [ $KERNEL_CHOICE == '02' ] ; then
-    clear && pacman -S linux-hardened linux-hardened-headers --noconfirm
+    clear && pacman -S linux-hardened --noconfirm
 
   elif [ $KERNEL_CHOICE == '3' ] || [ $KERNEL_CHOICE == '03' ] ; then
-    clear && pacman -S linux-lts linux-lts-headers --noconfirm
+    clear && pacman -S linux-lts --noconfirm
 
   elif [ $KERNEL_CHOICE == '4' ] || [ $KERNEL_CHOICE == '04' ] ; then
-    clear && pacman -S linux-zen linux-zen-headers --noconfirm
+    clear && pacman -S linux-zen --noconfirm
 
   else
     read -p 'Opção invalida, POR FAVOR ESCOLHA UM KERNEL, PRESSIONE ENTER PARA CONTINUAR...' && kernels_download
