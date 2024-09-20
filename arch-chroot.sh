@@ -73,7 +73,7 @@ pacman_config(){
   sed -i -r 's/^#(.*ParallelDownloads.*)$/\1/' /etc/pacman.conf
   sed -i '/ParallelDownloads/s/5/100/g' /etc/pacman.conf
   sed -i '40s/$/ILoveCandy/' /etc/pacman.conf
-  sed -i '90,91s/^#//' /etc/pacman.conf
+  sed -i '92,93s/^#//' /etc/pacman.conf
 }
 
 # Atualizar o repositorio
@@ -118,7 +118,7 @@ password_user(){
 
 # Editar o arquivo do sudo
 edit_sudoers(){
-  sed -i '114s/^# //' /etc/sudoers
+  sed -i '121s/^# //' /etc/sudoers
   #sed -i '89s/^[ \t]*//' /etc/sudoers
   #sed -i -r 's/^#(.*%wheel ALL=(ALL:ALL) ALL.*)$/\1/' /etc/sudoers
 }
